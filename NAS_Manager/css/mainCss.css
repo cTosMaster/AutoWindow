@@ -1,0 +1,156 @@
+#jb-container {
+   margin: 10px auto;
+   padding: 20px;
+   border: 10px solid #bcbcbc;
+   background-color: black;
+   background-repeat: no-repeat;
+   background-position: center;   /*배경 중앙 위치*/
+   background-size: cover;      	/*배경화면 꽉차게*/
+   opacity: 0.9;
+}
+#jb-header {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color:#ffffff;
+  font-family: sans-serif;
+  font-style: bolder;
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.15);
+  border: 1px solid #bcbcbc;
+}
+#jb-header > button {
+  background: #df4a4a;
+  border-radius: 8px;
+  color: #ffffff;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  padding: 10px 2em;
+  margin-top: -20px;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+}
+#jb-header > button:hover {
+  color: yellow;
+}
+#jb-content {
+  padding: 20px;
+  margin-bottom: 20px;
+  color:#ffffff;
+  border: 1px solid #bcbcbc;
+}
+#jb-content > h2 {
+	font-size: 42px;
+}
+#jb-content span {
+	display: block;
+	border-radius: 8px;
+	text-align: center;
+	border: 3px solid #ffffff;
+	padding: 20px 2em;
+  margin-bottom: 20px;
+	cursor: pointer;         /* 커서 둘 때 손가락 모양 */
+  color: white;
+  font-family: inherit;
+  font-weight: bolder;
+  text-decoration: none;   /* 밑줄 없애기 */
+}
+#jb-sidebar {
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #bcbcbc;
+}
+#jb-sidebar > h2 {
+	color: white;
+	font-size: 42px;
+}
+#jb-sidebar button, button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#jb-sidebar button {
+  background: none;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+	width: 100%;
+  margin: 1em auto;
+  padding: 30px 4em;
+  position: relative;
+  text-transform: uppercase;
+	cursor: pointer;
+}
+#jb-sidebar button::before, button::after {
+  background: #ffffff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+#jb-sidebar button:hover {
+  color: #2ecc71;
+}
+/* BUTTON Style */
+#jb-sidebar .btn::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+#jb-sidebar .btn:hover:after {
+	width: 100%;
+}
+#jb-footer {
+  padding: 20px;
+  color:#ffffff;
+  font-style: bold;
+  border: 1px solid #bcbcbc;
+}
+.dropdown span:hover li:hover {
+  background-color: #fff;
+  color: #2ecc71;
+}
+.dropdown span:hover li {
+  margin-top: 20px;
+  display: block;
+}
+.dropdown li{
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+  padding: 10px 2em;
+  text-align: center;
+  list-style: none;
+  display: none;
+}
+
+@media ( min-width: 480px) {
+  #jb-container {
+    max-width: 1920px;
+  }
+  #jb-header {
+    width: auto;
+    height: 110px;
+  }
+  #jb-content {
+    width: 480px; 
+	height: 580px;
+    float: right;
+  }
+  #jb-sidebar {
+    width: 480px; 
+	height: 580px;
+    float: left;
+  }
+  #jb-footer {
+    clear: both;
+  }
+}

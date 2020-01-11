@@ -1,0 +1,167 @@
+  body{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+
+  #auto-container {
+    margin: 5px auto;
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  #auto-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-size: 20px;
+    font-style: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #bcbcbc;
+  }
+
+  #auto-contents {
+    width: auto;
+    height: 580px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #bcbcbc;
+    padding-bottom: 40px;
+    color: white;
+  }
+
+  #auto-contents form input{
+    background: none;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    margin: 1em auto;
+    padding: 20px 4em;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #auto-contents h3 {
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    border: 1px solid #bcbcbc;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #auto-sidebar {
+    width: auto;
+    height: 580px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #bcbcbc;
+  }
+
+  #auto-sidebar h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+  }
+
+  #auto-sidebar > table thead tr th {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 20px;
+    font-family: sans-serif;
+    border: 1px solid #bcbcbc;
+    color: white;
+  }
+  #auto-sidebar .tbodyTd {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 12px;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid #bcbcbc;
+    color: white;
+  }
+  #auto-sidebar > a > button {
+    padding: 20px 0;
+    margin: 10px;
+    background-color: #A1B2C2;
+    width:160px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  #auto-uvStat {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    margin: 5px;
+    font-style: bolder;
+    color: gold;
+    border: 1px solid red;
+  }
+  #auto-rainStat {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    margin: 5px;
+    font-style: bolder;
+    color: gold;
+    border: 1px solid red;
+  }
+  #auto-footer {
+    padding: 20px;
+    color:#fff;
+    font-size: 20px;
+    font-style: bolder;
+    border: 3px solid #bcbcbc;
+    text-align: center;
+  }
+
+/* 데스크탑 */
+@media (min-width: 410px) {
+  #auto-container {
+    max-height: 1920px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    opacity:0.9;
+  }
+  #auto-header {
+    width: auto;
+    height: 110px;
+  }
+  #auto-contents {
+    width: 420px;
+    height: 480px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  #auto-sidebar {
+    width: 420px;
+    height: 480px;
+    margin-bottom: 10px;
+    float: right;
+  }
+  #auto-footer {
+    clear: both;
+  }
+}
